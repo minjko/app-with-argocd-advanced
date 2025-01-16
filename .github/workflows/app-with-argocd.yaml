@@ -76,3 +76,6 @@ jobs:
         git commit -m "Update nginx image to latest"
         git push
 
+    - name: Force file change
+      run: echo "# Update triggered by GitHub Actions" >> ./manifest/argocd-app.yaml
+
